@@ -9,10 +9,15 @@
   </head>
   <body>
     <div class="container">
-      <center>
+      <!-- <center> -->
         <h1>Death Prediction due to Heart Disease!</h1>
+        <a
+          href="https://github.com/hemanthyadaav/heartdiseasepredictionflask/blob/master/app/heart.csv"
+          target="_blank"
+          >Click here for Dataset</a
+        >
         <form method="POST">
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-25">
               <label for="fname"
                 >Input a comma separated list of attribute values :</label
@@ -21,18 +26,137 @@
             <div class="col-75">
               <input type="text" name="text" />
             </div>
+          </div> -->
+
+            <div class="row" style="margin-top: 2rem">
+              <div class="offset-25 col-25">
+                <label for="fname">Age</label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="age" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Anaemia (0/1) </label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="anaemia" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Creatinine Phosphokinase </label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="creatinine_phosphokinase" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Diabetes(0/1) </label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="diabetes" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Ejection Fraction </label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="ejection_fraction" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">High Blood Pressure (0/1) </label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="high_blood_pressure" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Platelets </label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="platelets" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Serum Creatinine </label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="serum_creatinine" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Serum Sodium </label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="serum_sodium" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Sex(0-female 1-male)</label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="sex" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Smoking(0/1)</label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="smoking" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">time</label>
+              </div>
+              <div class="col-25">
+                <input type="text" name="time" />
+              </div>
+            </div>
           </div>
 
-          <div class="row">
-            <input type="submit" value="Submit" style="margin-top: 2rem" />
-          </div>
+
+        
+<div class="row">
+  <div class="col-25">
+  <input type="submit" value="Submit" style="margin-top: 2rem" >
+  </div>
+  <!-- <button>Submit</button> -->
+</div>
+            
+      
+
+        
 
           <div class="row">
             <h2 class="output">{{output}}</h2>
           </div>
 
+
         </form>
-      </center>
+      <!-- </center> -->
     </div>
   </body>
 </html>
